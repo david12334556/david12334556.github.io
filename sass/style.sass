@@ -1,0 +1,686 @@
+$main-color: #1eacc7
+$second-color: #ff5656
+
+=btn_hover
+  &:hover
+    background-image: none
+    background-color: $main-color
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: 'Roboto', sans-serif
+
+body
+  background-color: #ffffff
+
+header
+  position: relative
+  height: 50px
+
+nav
+  position: fixed
+  width: 100%
+  height: 50px
+  background-color: #212121
+  z-index: 5
+
+// Скрываем сам чекбокс из верстки
+.menu-checkbox
+  display: none
+
+.hamburger
+  display: none
+
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style-type: none
+  &_link
+    color: #ffffff
+    font-size: 15px
+    font-weight: 300
+    text-decoration: none
+  &_item
+    border-right: 2px dashed #000000
+    padding-right: 28px
+    &:last-child
+        border-right: none
+
+.subheader
+  position: absolute
+  top: 50px
+  width: 100%
+  height: 84px
+  background-color: rgba(0, 0, 0, 0.6)
+  z-index: 2
+  &_logo
+    display: block
+    max-width: 100%
+    margin-top: 16px
+  &_official
+    margin-top: 6px
+    opacity: 0.5
+    color: #ffffff
+    font-size: 13px
+    font-weight: 400
+  &_call
+    color: #ffffff
+    font-size: 12px
+    font-weight: 300
+    margin-top: 19px
+    text-align: right
+  &_phone
+    display: block
+    margin-top: 8px
+    color: #ffffff
+    font-size: 22px
+    font-weight: 400
+    text-transform: uppercase
+    text-align: right
+    line-height: 12px
+    text-decoration: none
+  &_btn
+    margin-top: 19px
+    width: 172px
+    height: 46px
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 14px
+    font-weight: 400
+    text-transform: uppercase
+    +btn_hover
+
+.xs-visible
+  display: none
+
+.promo
+  min-height: 800px
+  background: url('../img/bg/mobile_bg.png') center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+  &_header
+    color: #ffffff
+    font-weight: 900
+    text-transform: uppercase
+    font-size: 60px
+    line-height: 60px
+    margin: 0
+    text-align: center
+  &_descr
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    line-height: 24px
+    text-align: center
+    margin-top: 23px
+  &_btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    background-image: linear-gradient(to top, $main-color 0%, #4ce2ff 100%)
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    text-transform: uppercase
+    +btn_hover
+
+.reasons
+  padding: 71px 0 65px 0
+  &_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+  &_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: $main-color
+    border-radius: 100%
+  &_descr
+    width: 343px
+  &_subtitle
+    line-height: 21px
+    color: $main-color
+    font-size: 17px
+    font-weight: 400
+  &_text
+    color: #202020
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+
+.label
+  margin: 0 auto
+  height: 24px
+  width: 112px
+  padding: 5px 12px
+  background-color: #000000
+  color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+  position: relative
+  z-index: 2
+  &_white
+    background-color: #ffffff
+    color: #000000
+
+.title
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222222
+  font-size: 38px
+  font-weight: 700
+  text-transform: uppercase
+  text-align: center
+  position: relative
+  z-index: 2
+  &_white
+    color: #ffffff
+
+.subtitle
+  margin-top: 19px
+  color: #222222
+  font-size: 17px
+  font-weight: 400
+  text-align: center
+  position: relative
+  z-index: 2
+  &_white
+    color: #ffffff
+
+.mobile
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url('../img/bg/mobile_bg.png') center (center / cover) no-repeat
+  &_item
+    position: relative
+    width: 320px
+    height: 280px
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 92px
+    &_1
+      background: url('../img/two/Карточка 1.png') center (center / cover) no-repeat
+    &_2
+      background: url('../img/two/Карточка 2.png') center (center / cover) no-repeat
+    &_3
+      background: url('../img/two/Карточка 3.png') center (center / cover) no-repeat
+    &_4
+      background: url('../img/two/Карточка 4.png') center (center / cover) no-repeat
+    &_5
+      background: url('../img/two/Карточка 5.png') center (center / cover) no-repeat
+    &_6
+      background: url('../img/two/Карточка 6.png') center (center / cover) no-repeat
+    &_subtitle
+      color: #ffffff
+      font-size: 24px
+      font-weight: 400
+      line-height: 31px
+      text-transform: uppercase
+      text-align: center
+    &_plus
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+      width: 26px
+      height: 26px
+      background-color: #000000
+      border-radius: 100%
+      cursor: pointer
+
+.choice
+  position: relative
+  min-height: 895px
+  padding: 57px 0 138px 0
+  background-color: #fff
+  .black
+    position: absolute
+    top: 0
+    left: 0
+    height: 499px
+    width: 100%
+    background-color: #070716
+    z-index: 1
+  .container
+    position: relative
+    z-index: 2
+  &_img
+    display: block
+    margin: 56px auto 0 auto
+    max-width: 100%
+  &_descr
+    text-align: center
+    color: #222222
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+
+.require
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0px
+  &_title
+    color: #1ca8c3
+    font-size: 22px
+    font-weight: 400
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      position: relative
+      font-size: 17px
+      font-weight: 300
+      line-height: 24px
+      margin-bottom: 10px
+  & .warning
+    .require_title
+      color: $second-color
+
+.world
+  position: relative
+  min-height: 717px
+  padding: 49px 0
+  background: url('../img/bg.five/world_bg.png') center (center / cover) no-repeat
+  &_link
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 49px
+    text-align: center
+    font-size: 15px
+    color: #1fbad6
+    text-transform: uppercase
+    text-decoration: none
+
+footer
+  padding: 14px 23px 39px 23px
+  background-color: #ffffff
+  a
+    text-decoration: none
+
+.footer
+  &_divider
+    width: 299px
+    height: 4px
+    background-color: #1fbad6
+    margin: 0 auto
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    margin-top: 32px
+  &_social_wrapper, &_links_wrapper, &_mobile_wrapper
+    width: 33%
+  &_mobile_wrapper
+    display: flex
+    justify-content: flex-end
+  &_social
+    width: 160px
+    display: flex
+    justify-content: space-between
+    &_item
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 32px
+      height: 32px
+      background-color: #070716
+      border-radius: 100%
+  &_links
+    width: 390px
+    margin: 0 auto
+    &_main
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a
+        color: #070716
+        font-size: 15px
+        font-weight: 300
+        text-transform: uppercase
+    &_sub
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
+      a
+        color: #999999
+        font-size: 11px
+        font-weight: 300
+        text-transform: uppercase
+    &_lang
+      display: block
+      margin: 0 auto
+      color: #1fbad6
+      font-size: 11px
+      font-weight: 400
+      text-transform: uppercase
+      text-align: center
+      margin-top: 19px
+  &_mobile
+    display: flex
+    gap: 7px
+    img
+      width: 85px
+
+/* --- МЕДИА-ЗАПРОСЫ (АДАПТИВНОСТЬ) --- */
+
+@media (max-width: 1200px)
+  .menu
+    &_item
+      padding-right: 20px
+    &_link
+      font-size: 13px
+  .promo
+    &_header
+      font-size: 50px
+  .reasons
+    &_block
+      align-items: flex-start
+    &_descr
+      width: 300px
+  .mobile
+    &_item
+      width: 300px
+
+@media (max-width: 991px)
+  .menu
+    padding: 13px 10px
+    &_item
+      padding-right: 10px
+    &_link
+      font-size: 11px
+  .subheader
+    &_logo
+      img
+        width: 100%
+    &_official
+      font-size: 11px
+    &_phone
+      font-size: 18px
+    &_btn
+      margin-top: 21px
+      width: 100%
+      height: 40px
+  .promo
+    &_header
+      font-size: 40px
+  .reasons
+    &_block
+      flex-direction: column
+      align-items: center
+    &_round
+      margin-right: 0
+    &_descr
+      margin-top: 20px
+  .choice
+    min-height: 800px
+  .footer
+    &_wrapper
+      flex-direction: column
+      align-items: center
+      gap: 20px
+    &_social_wrapper, &_links_wrapper, &_mobile_wrapper
+      width: 100%
+      display: flex
+      justify-content: center
+
+@media (max-width: 767px)
+  // Мобильная панель навигации (прячется за левый край)
+  .menu
+    position: fixed
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    top: 0
+    left: -100%
+    width: 50%
+    height: 100vh
+    padding: 20px 15px
+    background-color: rgba(0, 0, 0, 0.9)
+    transition: 0.6s all
+    z-index: 10
+    &_item
+      padding-right: 0
+      border: none
+      margin: 15px 0
+      width: 100%
+      text-align: center
+    &_link
+      font-size: 18px
+      display: block
+
+  // Магия CSS: когда чекбокс активен, выкатываем меню
+  .menu-checkbox:checked ~ .menu
+    left: 0
+
+  // Включаем отображение кнопки бургера
+  .hamburger
+    display: block
+    position: absolute
+    right: 20px
+    top: 50%
+    transform: translateY(-50%)
+    width: 26px
+    height: 12px
+    cursor: pointer
+    z-index: 11
+    span
+      display: block
+      height: 2px
+      width: 100%
+      background-color: #fff
+      margin-bottom: 3px
+      transition: 0.5s all
+      &:last-child
+        margin-bottom: 0
+
+  // Перекрестие линий при нажатом чекбоксе (активный бургер)
+  .menu-checkbox:checked ~ .hamburger
+    span
+      margin-bottom: -2px
+      &:nth-child(1)
+        transform: translateY(3px) rotate(-45deg)
+      &:nth-child(2)
+        display: none
+      &:nth-child(3)
+        transform: translateY(3px) rotate(45deg)
+
+  .xs-hidden
+    display: none
+  .xs-visible
+    display: block
+
+  .subheader
+    &_phone
+      display: block
+      margin-top: 10px
+      color: #ffffff
+      font-size: 14px
+      font-weight: 400
+      text-transform: uppercase
+      text-align: center
+    &_btn
+      display: block
+      width: 160px
+      height: 36px
+      margin: 0 auto
+      margin-top: 7px
+  .promo
+    &_header
+      font-size: 35px
+      line-height: 45px
+  .choice
+    min-height: 600px
+    padding: 40px 0
+
+@media (max-width: 575px)
+  nav, header
+    height: 30px
+  .hamburger
+    right: 15px
+  .subheader
+    height: 60px
+    top: 30px
+    &_official
+      display: none
+    &_logo
+      margin-top: 16px
+    &_phone
+      font-size: 12px
+      margin-top: 11px
+    &_btn
+      width: 110px
+      height: 22px
+      font-size: 10px
+      margin-top: 6px
+  .promo
+    min-height: 400px
+    padding: 93px 0 35px 0
+    &_descr
+      display: none
+    &_header
+      font-size: 30px
+      padding: 0 24px
+      line-height: 35px
+    &_btn
+      width: 210px
+      height: 50px
+      margin-top: 72px
+  .menu
+    width: 85%
+  .reasons
+    padding: 22px 0 36px 0
+    &_block
+      margin-top: 26px
+    &_round
+      width: 100px
+      height: 100px
+    &_descr
+      width: 100%
+  .title
+    font-size: 16px
+    margin-top: 15px
+    line-height: 16px
+  .subtitle
+    font-size: 14px
+    margin-top: 11px
+  .choice
+    min-height: 390px
+    background-color: #070716
+    padding: 25px 0 33px 0
+    .black
+      display: none
+    &_img
+      margin-top: 35px
+    &_descr
+      color: #ffffff
+      margin-top: 23px
+  .require
+    padding: 25px 0
+    &_block
+      margin: 15px 0
+    &_list
+      padding-left: 30px
+      margin-top: 5px
+      li
+        font-size: 14px
+        line-height: 20px
+  .world
+    min-height: 360px
+    padding: 25px 0 30px 0
+    &_link
+      bottom: 30px
+      width: 200px
+
+
+      .choice
+    position: relative
+    min-height: 895px
+    padding: 57px 0 138px 0
+    background: url('../img/bg/world_bg.png') center (center / cover) no-repeat
+    &_img
+        position: relative
+        display: block
+        margin: 56px auto 0 auto
+        z-index: 2
+    &_descr
+        position: relative
+        text-align: center
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        z-index: 2
+    .label, .title, .subtitle
+        position: relative
+        z-index: 2
+    .black
+        position: absolute
+        top: 0
+        left: 0
+        height: 499px
+        width: 100%
+        background-color: #070716
+        z-index: 1
+
+        .choice
+    position: relative
+    min-height: 895px
+    padding: 57px 0 138px 0
+    background: url('../img/bg/world_bg.png') center (center / cover) no-repeat
+    &_img
+        position: relative
+        display: block
+        margin: 56px auto 0 auto
+        z-index: 2
+    &_descr
+        position: relative
+        text-align: center
+        color: #222222
+        font-size: 17px
+        font-weight: 300
+        line-height: 24px
+        z-index: 2
+    .label, .title, .subtitle
+        position: relative
+        z-index: 2
+    .black
+        position: absolute
+        top: 0
+        left: 0
+        height: 499px
+        width: 100%
+        background-color: #070716
+        z-index: 1
+
+        .world
+    position: relative
+    min-height: 717px
+    padding: 49px 0
+    background: url('../img/bg/world_bg.png') center (center / cover) no-repeat
+    background-color: #080816 // Темный цвет фона на случай, если картинка не прогрузится
